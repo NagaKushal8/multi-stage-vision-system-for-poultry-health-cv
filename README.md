@@ -2,7 +2,7 @@
 
 A two-stage computer vision pipeline for automated detection and classification of poultry diseases from farm images.
 
-
+infographic here : [`assets/results/infographic.png`](view_here)
 
 
 ## Overview
