@@ -2,7 +2,7 @@
 
 A two-stage computer vision pipeline for automated detection and classification of poultry diseases from farm images.
 
-infographic here : [`assets/results/infographic.png`](view_here)
+infographic here : [`view`](assets/results/infographic.png)
 
 
 ## Overview
@@ -78,7 +78,7 @@ Per-class breakdown:
 
 Stage 2 performance reflects the limited size of the disease-specific dataset (246 training images across 5 classes). The Hen class achieves strong metrics; disease classes require more training data for production use.
 
-Sample outputs are in [`assets/results/`](results).
+Sample outputs are in [`view`](assets/results/)  
 
 ---
 
