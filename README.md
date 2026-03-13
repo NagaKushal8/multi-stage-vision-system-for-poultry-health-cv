@@ -78,6 +78,18 @@ Per-class breakdown:
 
 Stage 2 performance reflects the limited size of the disease-specific dataset (246 training images across 5 classes). The Hen class achieves strong metrics; disease classes require more training data for production use.
 
+### Cross-Dataset Validation (Stage 2 on Stage 1 validation set)
+
+The Stage 2 model was also evaluated against the Stage 1 validation split (Disease-Prediction-2, 40 images / 265 instances) to measure out-of-distribution behavior:
+
+| Class | Precision | Recall | mAP50 | mAP50-95 |
+|-------|-----------|--------|-------|----------|
+| All | 0.068 | 0.173 | 0.051 | 0.016 |
+| Avian Influenza | 0.066 | 0.312 | 0.064 | 0.017 |
+| Fowl Pox | 0.069 | 0.033 | 0.037 | 0.015 |
+
+The near-zero mAP is expected. Stage 2 was trained to classify specific disease types while Stage 1 uses a coarser Normal/AbNormal labeling scheme. The two models operate on different label spaces and are not designed to be interchangeable. In the pipeline, Stage 2 only ever receives cropped regions flagged as AbNormal by Stage 1.
+
 Sample outputs are in [`view`](assets/results/)  
 
 ---
