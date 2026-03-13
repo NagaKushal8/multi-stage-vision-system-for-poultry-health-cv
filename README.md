@@ -3,13 +3,13 @@
 A two-stage computer vision pipeline for automated detection and classification of poultry diseases from farm images.
 
 
----
+
 
 ## Overview
 
 This project implements a hierarchical detection system that first localizes birds in farm imagery and then classifies specific diseases at the individual bird level. The two-stage approach mirrors real-world farm monitoring constraints where cameras capture wide-angle views and fine-grained disease symptoms need close-up analysis.
 
----
+
 
 ## Problem Statement
 
